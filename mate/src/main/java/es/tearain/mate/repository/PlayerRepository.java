@@ -1,5 +1,5 @@
 package es.tearain.mate.repository;
 
-public interface AttackRepository {
+public interface PlayerRepository {
 
 }

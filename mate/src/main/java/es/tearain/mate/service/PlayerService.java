@@ -1,5 +1,5 @@
 package es.tearain.mate.service;
 
-public interface SpellService {
+public interface PlayerService {
 
 }
