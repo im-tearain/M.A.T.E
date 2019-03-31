@@ -1,5 +1,5 @@
 package es.tearain.mate.repository.combat;
 
-public interface SpellRepository {
+public interface WeaponAttackRepository {
 
 }

@@ -1,5 +1,5 @@
 package es.tearain.mate.controller;
 
-public class AttackRequest {
+public class NpcRequest {
 
 }

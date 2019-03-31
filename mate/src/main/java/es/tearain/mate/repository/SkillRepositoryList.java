@@ -1,4 +1,4 @@
-package es.tearain.mate.repository.combat;
+package es.tearain.mate.repository;
 
 public class SkillRepositoryList implements SkillRepository {
 

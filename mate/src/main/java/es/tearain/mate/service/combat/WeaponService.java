@@ -1,5 +1,5 @@
 package es.tearain.mate.service.combat;
 
-public interface SkillService {
+public interface WeaponService {
 
 }
