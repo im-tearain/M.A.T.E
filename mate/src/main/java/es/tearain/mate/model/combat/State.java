@@ -1,0 +1,22 @@
+package es.tearain.mate.model.combat;
+
+public enum State {
+	
+	BLINDED,
+	CHARMED,
+	DEAFENED,
+	FATIGUED,
+	FRIGHTENED,
+	GRAPPLED,
+	INCAPACITED,
+	INVISIBLE,
+	PARALYZED,
+	PETRIFIED,
+	POISONED,
+	PRONE,
+	RESTRAINED,
+	STUNNED,
+	UNCONSCIOUS,
+	EXHAUSTION,
+	
+}
