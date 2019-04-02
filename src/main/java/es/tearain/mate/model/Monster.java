@@ -8,19 +8,14 @@ public class Monster extends Character {
 	
 	private final int toHit;
 	
-	public Monster(int id, String name, int baseHp, int currentHp, int hpDice, int speed, 
-				boolean flyable,  int strength, int dexerity, int constitution, 
-				int intelligence, int wisdom, int charisma, List<Weapon> weapons, 
-				List<Spell> spells, int toHit) {
-	super();
-	this.toHit = toHit;
 	
-	this.setStrength(strength);
-	this.setDexerity(dexerity);
-	this.setConstitution(constitution);
-	this.setIntelligence(intelligence);
-	this.setWisdom(wisdom);
-	this.setCharisma(charisma);
+	
+	public Monster(int id, String name, int baseHp, int currentHp, int hpDice, int speed, boolean flyable, int strength,
+			int dexerity, int constitution, int intelligence, int wisdom, int charisma, List<Weapon> weapons,
+			List<Spell> spells, int toHit) {
+		super(id, name, baseHp, currentHp, hpDice, speed, flyable, strength, dexerity, constitution, intelligence,
+				wisdom, charisma, weapons, spells);
+		this.toHit = toHit;
 	}
 
 	public int getToHit() {
