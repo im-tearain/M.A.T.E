@@ -1,17 +1,19 @@
 package es.tearain.mate.model;
 
+import java.util.List;
+
+import es.tearain.mate.model.combat.Weapon;
+
 public class Monster extends Character {
+	
+	private final int toHit;
 	
 	public Monster(int id, String name, int baseHp, int currentHp, int hpDice, int speed, 
 				boolean flyable,  int strength, int dexerity, int constitution, 
-				int intelligence, int wisdom, int charisma) {
-	this.id = id;
-	this.name = name;
-	this.baseHp = baseHp;
-	this.currentHp = currentHp;
-	this.hpDice = hpDice;
-	this.speed = speed;
-	this.flyable = flyable;
+				int intelligence, int wisdom, int charisma, List<Weapon> weapons, 
+				List<Spell> spells, int toHit) {
+	super();
+	this.toHit = toHit;
 	
 	this.setStrength(strength);
 	this.setDexerity(dexerity);
@@ -20,7 +22,11 @@ public class Monster extends Character {
 	this.setWisdom(wisdom);
 	this.setCharisma(charisma);
 	}
-	
+
+	public int getToHit() {
+		return toHit;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

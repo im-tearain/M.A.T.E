@@ -1,6 +1,10 @@
 package es.tearain.mate.model;
 
-public abstract class Character extends Stat {
+import java.util.List;
+
+import es.tearain.mate.model.combat.Weapon;
+
+public class Character extends Stat {
 	
 	protected String name;
 	protected int level;
@@ -9,6 +13,30 @@ public abstract class Character extends Stat {
 	protected int hpDice;
 	protected int speed;
 	protected boolean flyable;
+	protected List<Weapon> weapons;
+	protected List<Spell> spells;
+	
+	public Character(int id, String name, int baseHp, int currentHp, int hpDice, int speed, 
+			boolean flyable,  int strength, int dexerity, int constitution, 
+			int intelligence, int wisdom, int charisma, List<Weapon> weapons, 
+			List<Spell> spells) {
+		this.id = id;
+		this.name = name;
+		this.baseHp = baseHp;
+		this.currentHp = currentHp;
+		this.hpDice = hpDice;
+		this.speed = speed;
+		this.flyable = flyable;
+		this.weapons = weapons;
+		this.spells = spells;
+		
+		this.setStrength(strength);
+		this.setDexerity(dexerity);
+		this.setConstitution(constitution);
+		this.setIntelligence(intelligence);
+		this.setWisdom(wisdom);
+		this.setCharisma(charisma);
+	}
 	
 	protected int getId() {
 		return id;
@@ -72,6 +100,22 @@ public abstract class Character extends Stat {
 	
 	protected void setFlyable(boolean flyable) {
 		this.flyable = flyable;
+	}
+	
+	protected List<Weapon> getWeapons() {
+		return weapons;
+	}
+	
+	protected void setWeapons(List<Weapon> weapons) {
+		this.weapons = weapons;
+	}
+	
+	protected List<Spell> getSpells() {
+		return spells;
+	}
+	
+	protected void setSpells(List<Spell> spells) {
+		this.spells = spells;
 	}
 
 	@Override
