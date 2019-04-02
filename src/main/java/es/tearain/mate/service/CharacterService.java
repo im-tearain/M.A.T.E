@@ -1,5 +1,5 @@
 package es.tearain.mate.service;
 
-public interface PlayerService {
+public interface CharacterService {
 
 }
